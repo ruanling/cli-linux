@@ -1,0 +1,4 @@
+local_root=/data/
+dirlist_enable=YES
+download_enable=YES
+write_enable=YES
