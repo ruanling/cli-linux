@@ -4,8 +4,7 @@
 4. git push <alias> <branch_name>
 5. git clone https://github.com/user/repository.git
 
-
-<div">
+<div>
 <p>Sự quan trọng của quản lý phiên bản (Git) hiện nay trong lập trình là không thể chối cãi. Lúc mới tập tành xài Git, nó thật rối rắm và phức tạp bởi vì phải dùng đến các dòng lệnh command line.</p>
 <p>Sau một thời gian sử dụng, mình đã ước &ldquo;<em>Sẽ thật là hay nếu như có một danh sách các lệnh được sử dụng thường xuyên để ghi nhớ thay vì lan man phải nhớ hết tất cả các lệnh</em>&ldquo;. Mỗi khi gặp vấn đề gì đó cơ bản về github, mình thường lên stackoverflow tìm kiếm, sau đó copy paste và không cần hiểu quá sâu xa, quá rõ ràng về cơ chế hoạt động của nó. Nhưng mình nhận ra tình trạng này lâu dài chỉ làm cho kỹ năng của mình yếu dần đi.</p>
 <p>Trong một năm đi làm, danh sách các lệnh này theo mình qua hầu như các dự án. Có thể nó không đầy đủ nhưng về cơ bản ai cũng chỉ cần có vậy, thậm chí các leader sẽ dùng nhiều rất nhiều vài lệnh mà mình sắp trình bày đây.<span id="more-580"> </span></p>
