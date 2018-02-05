@@ -1,7 +1,7 @@
 1. git remote add origin https://github.com/..
 2. git add --all
 3. git commit -m "<Message>"
-4. git push <alias> <branch_name>
+4. git push origin master
 5. git clone https://github.com/user/repository.git
 
 <div>
