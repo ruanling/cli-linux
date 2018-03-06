@@ -1,3 +1,5 @@
+<p>- curl -fsSL https://get.docker.com/ | sh </p>
+
 <p>- Pull một image từ Docker Hub<br />
   docker pull {image_name}</p>
 <p>- Liệt kê các images hiện có<br />
