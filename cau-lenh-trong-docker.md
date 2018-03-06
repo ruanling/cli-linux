@@ -1,5 +1,11 @@
 <p>- curl -fsSL https://get.docker.com/ | sh </p>
 
+<p>- Create volumes <br />
+   - docker volume create mysql_cnf<br />
+   - cd /var/lib/docker/volumes<br />
+   - docker volume rm mysql_cnf<br />
+   - docker volume create mysql_wiki <br />
+
 <p>- Pull một image từ Docker Hub<br />
   docker pull {image_name}</p>
 <p>- Liệt kê các images hiện có<br />
