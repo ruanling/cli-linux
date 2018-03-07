@@ -33,6 +33,12 @@
   docker commit -m &quot;message&quot; {container_name} {image_name}</p>
 <p>- Save image thành file .tar<br />
   docker save {image_name} &gt; {/host_path/new_image.tar}</p>
+<p>- Load image thành file .tar<br />
+  docker load  docker load < {/host_path/new_image.tar}</p>
+<p>- Export image thành file .tar<br />
+  docker export {image_name} &gt; {/host_path/new_image.tar}</p>
+<p>- Import image thành file .tar<br />
+  cat {/host_path/new_image.tar} | docker import - {image_name}</p>   
 <p>- Tạo một image mới từ file .tar<br />
 cat musashi.tar | docker import - {new_image_name}:latest</p>
 <p>- Xem lịch sử các commit trên image<br />
