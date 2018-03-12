@@ -1,5 +1,8 @@
 <p>- curl -fsSL https://get.docker.com/ | sh </p>
 
+<p>- Show info docker <br />
+   -  docker inspect {container_id/name}</p>
+
 <p>- Create volumes <br />
    - docker volume create mysql_cnf<br />
    - cd /var/lib/docker/volumes<br />
