@@ -44,8 +44,8 @@ VD: # gluster volume top data open brick HA02:/gluster/data list-cnt 10
 # gluster volume top data write-perf bs 128 count 1 brick HA01:/gluster/data list-cnt 10
 
 ```
-Chech thông tin Replicate
+Check thông tin Replicate
 
 ```
-# gluster volume heal volume info
+# gluster volume heal volume_test info
 ```
