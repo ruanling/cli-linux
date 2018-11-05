@@ -261,13 +261,19 @@ Running GlusterFS Volume TOP
 VD: # gluster volume top data open brick HA02:/gluster/data list-cnt 10
 
 - volume top <VOLNAME> {read-perf|write-perf} [bs <size> count <count>] [brick <brick>] [list-cnt <value>
+
 - để xem hiệu suất đọc trên máy chủ gạch: / xuất / khối lượng kiểm tra, kích thước khối 256 của số 1 và danh sách 10:
 # gluster volume top data read-perf bs 256 count 1 brick HA01:/gluster/data list-cnt 10
+
 - để xem hiệu suất ghi trên máy chủ gạch: / xuất / khối lượng kiểm tra, kích thước khối 256 của số 1 và danh sách 10:
 # gluster volume top data write-perf bs 128 count 1 brick HA01:/gluster/data list-cnt 10
 
 ```
+Chech thông tin Replicate
 
+```
+# gluster volume heal volume info
+```
 
 <a name="Tailieu"></a>
 ## Tài liệu tham khảo 
