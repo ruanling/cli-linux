@@ -49,3 +49,10 @@ Check thông tin Replicate
 ```
 # gluster volume heal volume_test info
 ```
+Lỗi already part of a volume
+volume create: data01: failed: parent directory /gluster/vdb1/brick1 is already part of a volume
+```
+# setfattr -x trusted.glusterfs.volume-id /gluster/vdb1/brick1
+# setfattr -x trusted.gfid /gluster/vdb1/brick1
+# rm -rf /gluster/vdb1/brick1/.glusterfs
+```
