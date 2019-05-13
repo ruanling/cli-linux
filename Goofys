@@ -1,0 +1,34 @@
+https://www.techiescorner.in/archives/335
+
+curl -LO https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz
+
+tar -C /usr/local -xvzf go1.12.5.linux-amd64.tar.gz
+
+mkdir -p /home/goofys/{bin,pkg,src}
+
+vi /etc/profile.d/path.sh
+export PATH=$PATH:/usr/local/go/bin
+
+vi  /root/.bash_profile
+export GOBIN=/home/goofys/bin/
+export GOPATH=/home/goofys/
+
+source /etc/profile && source  /root/.bash_profile
+
+yum -y  install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils git-all
+
+yum -y install fuse
+
+go get github.com/kahing/goofys
+
+go install github.com/kahing/goofys
+
+vi .aws/credentials
+[default]
+aws_access_key_id=s3user10103
+aws_secret_access_key=2T57Q0J4/FEMS8MbHLJdCgTThglG/EgC6N7Tc/7O
+
+$GOPATH/bin/goofys --endpoint http://s3.storebox.vn --debug_fuse --debug_s3 -f emobi.storage /h
+
+
+
