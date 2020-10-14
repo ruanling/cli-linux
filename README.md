@@ -6,6 +6,10 @@
 4. /home/certbot-auto certonly --webroot -w /home/ebuda.vn/ -d ebuda.vn	
 5. certbot renew --pre-hook "service nginx stop" --post-hook "service nginx start"
 
+#Thay đổi Hostname trên CentOS 7
+hostnamectl set-hostname vps.example.com
+systemctl restart systemd-hostnamed
+
 #FTP server với virtual user
 1. yum install db4-utils db4 -y
 2. Copy virtual_users.txt vào thư mục /etc/vsftpd/virtual_users.txt
